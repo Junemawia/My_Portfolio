@@ -1,8 +1,8 @@
-/* --- THE VIBRANT PINK THEME --- */
+
 :root {
-    --hot-pink: #FF007A; /* Your main "Oraimo" pink */
-    --soft-pink: #FFF0F6; /* Background blush */
-    --deep-plum: #2D001D; /* Professional dark text */
+    --hot-pink: #FF007A; 
+    --soft-pink: #FFF0F6; 
+    --deep-plum: #2D001D; 
     --white: #FFFFFF;
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -27,7 +27,7 @@ body {
     padding: 0 20px;
 }
 
-/* --- HEADER --- */
+
 .main-header {
     position: fixed;
     top: 0; width: 100%;
@@ -76,7 +76,7 @@ body {
     border-radius: 50px;
 }
 
-/* --- HERO --- */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -154,8 +154,8 @@ body {
     width: min(520px, 90%);
     height: auto;
     display: block;
-    border-radius: 24px; /* Soft, elegant corners */
-    background: transparent; /* No background, just the image */
+    border-radius: 24px; 
+    background: transparent; 
     filter: drop-shadow(0px 20px 30px rgba(45, 0, 29, 0.15)); 
     transition: var(--transition);
     position: relative;
@@ -163,7 +163,7 @@ body {
 }
 
 .profile-img:hover {
-    /* Smooth lift on hover to show off your design interactive skills */
+
     transform: translateY(-10px) scale(1.02);
     filter: drop-shadow(0px 25px 40px rgba(255, 0, 122, 0.3));
 }
@@ -174,7 +174,7 @@ body {
     filter: drop-shadow(0px 30px 45px rgba(255, 105, 180, 0.45));
 }
 
-/* --- WORK GRID --- */
+
 .work-section { padding: 100px 0; }
 
 .section-title {
@@ -261,7 +261,7 @@ body {
     color: #7a6371;
 }
 .main-footer {
-    background-color: #2D001D; /* Deep berry/dark charcoal */
+    background-color: #2D001D; 
     color: #ffffff;
     padding: 40px 20px;
     text-align: center;
@@ -276,7 +276,7 @@ body {
 }
 
 .footer-email {
-    color: #FF69B4; /* Your signature pink */
+    color: #FF69B4; 
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -285,7 +285,7 @@ body {
 
 .footer-email:hover {
     color: #ffffff;
-    letter-spacing: 1px; /* Subtle "expanding" animation */
+    letter-spacing: 1px; 
 }
 
 .footer-links p {
@@ -293,10 +293,10 @@ body {
     font-size: 0.8rem;
     color: #FFB6C1;
 }
-/* --- MEDIA QUERY FOR MOBILE DEVICES --- */
+
 @media screen and (max-width: 768px) {
     
-    /* 1. Header Navigation Adjustments */
+    
     .main-header .container {
         flex-direction: column;
         gap: 15px;
@@ -308,11 +308,11 @@ body {
         justify-content: center;
     }
 
-    /* 2. Hero Section Stacking */
+    
     .hero {
         min-height: auto;
-        padding: 140px 20px 60px; /* More space at the top for the fixed header */
-        flex-direction: column;    /* Stacks text on top, image on bottom */
+        padding: 140px 20px 60px; 
+        flex-direction: column;    
         text-align: center;
         gap: 40px;
     }
@@ -322,12 +322,12 @@ body {
     }
 
     .hero-text {
-        padding-right: 0;         /* Removes desktop padding side strain */
+        padding-right: 0;         
         margin-bottom: 20px;
     }
 
     .hero-text h1 {
-        font-size: 2.8rem;        /* Shrinks massive typography so it fits mobile screens */
+        font-size: 2.8rem;        
     }
 
     .hero-image {
@@ -335,14 +335,14 @@ body {
         justify-content: center;
     }
 
-    /* 3. Your Cutout Adjustments */
+    
     .profile-img {
-        width: min(340px, 85%);   /* Scales down slightly on mobile so it doesn't bleed out */
+        width: min(340px, 85%);   
     }
     
-    /* 4. Portfolio Projects Grid Split */
+    
     .project-grid {
-        grid-template-columns: 1fr; /* Forces cards into a clean single-column scroll */
+        grid-template-columns: 1fr; 
         padding: 0 10px;
     }
 }
